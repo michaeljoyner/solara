@@ -67,7 +67,7 @@
         @endforeach
     @endif
         <label for="quote_files">
-            If you have an existing logo, or if you have any images you want to share with us, please upload them here.<span class="file-browse-btn">Browse files</span>
+            If you have any image or document files you want to share with us, please upload them here.<span class="file-browse-btn">Browse files</span>
             <input type="file" multiple="true" name="quote_uploads[]" class="form-control" id="quote_files"/>
         </label>
     </div>
