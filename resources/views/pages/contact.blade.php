@@ -25,5 +25,6 @@
         title.style.transform = "rotateX(0deg)";
     }
     window.addEventListener('load', showTitle, false);
+    showTitle();
 </script>
 @stop

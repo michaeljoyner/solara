@@ -120,5 +120,6 @@ var uploadManager = {
     }
 }
 uploadManager.init();
+showTitle();
 </script>
 @stop
