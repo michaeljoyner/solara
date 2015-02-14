@@ -1,0 +1,12 @@
+.products-title {
+  font-family: $head_font;
+  font-size: 6em;
+  color: $primary_colour;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 1.5s .5s;
+  transform: rotateX(90deg);
+  margin-top: 0;
+  @include respond-to(phone) {font-size: 4.5em; margin-top: 0.5em;}
+  @include respond-to(smalltablet) {font-size: 5em; margin-top: 0.5em;}
+}

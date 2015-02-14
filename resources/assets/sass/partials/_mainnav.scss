@@ -1,0 +1,61 @@
+.nav-list-holder ul a {
+  text-decoration: none;
+}
+
+.nav-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.nav-list-holder {
+  border-left: 3px solid $secondary_colour;
+  padding: 1em 0;
+  margin: 0 0 0 0.5em;
+}
+
+.nav-list-holder ul {
+  list-style-type: none;
+}
+
+.nav-list-holder ul li {
+  position: relative;
+  color: $secondary_colour;
+  text-transform: uppercase;
+  font-family: $head_font;
+  font-weight: bold;
+  font-size: small;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border: 1px solid $secondary_colour;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0.5em 0;
+  transition: 1s;
+}
+
+.nav-list-holder ul li:not(.current):hover {
+  background: $secondary_colour;
+  color: $white;
+  transform: rotateX(360deg);
+}
+
+.nav-list-holder ul li.current {
+  background: $secondary_colour;
+  color: $white;
+}
+
+.nav-list-holder ul:hover li.current {
+  color: $secondary_colour;
+  background: $white;
+}
+
+.nav-list-holder ul li:before {
+  position: absolute;
+  content: '';
+  left: -44px;
+  height: 1px;
+  width: 43px;
+  background: $secondary_colour;
+  top: 50%;
+}

@@ -1,0 +1,22 @@
+.contact-details {
+  padding: 2em 0 4em 2em;
+  font-family: $content_font;
+  color: $primary_colour;
+  font-size: 1.25em;
+  line-height: 2em;
+  @include respond-to(phone) {padding: 1em;}
+  @include respond-to(smalltablet) {padding: 1em;}
+
+  h2 {
+    max-width: 700px;
+    margin: 0 auto 3em;
+    text-align: center;
+  }
+}
+
+.wires-img {
+  float: right;
+  margin-right: 3em;
+  width: 30%;
+  @include respond-to(phone) {display: none;}
+}
