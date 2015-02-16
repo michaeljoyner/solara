@@ -70,6 +70,15 @@
 			close: function() {
 				var body = document.querySelector("body");
 				body.classList.remove("show-nav");
+			},
+
+			preventTouchScroll: function() {
+				var body = document.querySelector("body");
+				body.addEventListener('touchmove', function(ev) {
+					if(menuOperator.isOpen()) {
+						ev.preventDefault();
+					}
+				});
 			}
 		}
 		var togglers = document.querySelectorAll(".nav-toggler");
@@ -77,6 +86,7 @@
 			console.log(togglers[i]);
 			togglers[i].addEventListener('click', menuOperator.toggle, false);
 		}
+		menuOperator.preventTouchScroll();
 	</script>
 @yield('bodyscripts')
 </body>
