@@ -15,7 +15,3 @@
 </div>
 @include('partials.footer')
 @stop
-
-@section('bodyscripts')
-@include('partials.showtitlescript')
-@stop

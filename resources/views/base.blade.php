@@ -8,7 +8,7 @@
 <title>Solara asia</title>
 @show
 	<script src="{{ asset('js/modernizr-new.js') }}"></script>
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="{{ elixir("css/app.css") }}" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<!-- Fonts -->
@@ -47,47 +47,8 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		 var menuOperator = {
-			isOpen: function() {
-				var body = document.querySelector("body");
-				return body.classList.contains("show-nav");
-			},
 
-			toggle: function() {
-				if(menuOperator.isOpen()) {
-					menuOperator.close();
-				} else {
-					menuOperator.open();
-				}
-			},
-
-			open: function() {
-				var body = document.querySelector("body");
-				body.classList.add("show-nav");
-			},
-
-			close: function() {
-				var body = document.querySelector("body");
-				body.classList.remove("show-nav");
-			},
-
-			preventTouchScroll: function() {
-				var body = document.querySelector("body");
-				body.addEventListener('touchmove', function(ev) {
-					if(menuOperator.isOpen()) {
-						ev.preventDefault();
-					}
-				});
-			}
-		}
-		var togglers = document.querySelectorAll(".nav-toggler");
-		for(var i = 0; i < togglers.length; i++) {
-			console.log(togglers[i]);
-			togglers[i].addEventListener('click', menuOperator.toggle, false);
-		}
-		menuOperator.preventTouchScroll();
-	</script>
+	<script src="{{ elixir('js/all.js') }}"></script>
 @yield('bodyscripts')
 </body>
 </html>

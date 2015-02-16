@@ -12,7 +12,7 @@
     <div class="fum_infobox">
         <p>Status: <span class="fum_status">uploading</span></p>
         <div class="fum_progressbar_outer"><div class="fum_progressbar_inner"></div></div>
-        <div class="fum_cancelbtn btn btn-info btn-xs">cancel</div>
+        <div class="fum_cancelbtn btn btn-danger btn-xs">cancel</div>
     </div>
 </script>
     <script type="text/template" id="errorTemplate">
@@ -81,8 +81,6 @@
 
 @section('bodyscripts')
 <script src="{{ asset('js/uploadi.min.js') }}"></script>
-@include('partials.showtitlescript')
-
 <script>
 var uploadManager = {
     form: document.getElementById('quote-form'),

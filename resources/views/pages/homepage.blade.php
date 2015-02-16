@@ -33,26 +33,3 @@
     </div>
     @include('partials.footer')
 @stop
-
-@section('bodyscripts')
-<script>
-    var pageAnimator = {
-        elems: {
-            'logo': document.querySelector('.logo-title'),
-            'sun': document.querySelector('.logo-circle'),
-            'subtitle': document.querySelector('.sub-title'),
-            'titleLeft': document.querySelector('.logo-title-left')
-        },
-
-        init: function() {
-            pageAnimator.elems.logo.classList.add('show');
-            pageAnimator.elems.subtitle.classList.add('show');
-            pageAnimator.elems.sun.classList.add("in-place");
-
-        }
-    }
-    window.addEventListener('load', pageAnimator.init, false);
-
-
-</script>
-@stop
