@@ -16,6 +16,7 @@ Route::get('products', ['as' => 'products', 'uses' => 'PagesController@products'
 Route::get('services', ['as' => 'services', 'uses' => 'PagesController@services']);
 Route::get('quote', ['as' => 'quote', 'uses' => 'PagesController@quote']);
 Route::get('contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
+Route::get('thanks', ['as' => 'thanks', 'uses' => 'PagesController@thanks']);
 
 Route::post('quoterequest', ['as' => 'quoterequest', 'uses' => 'QuoteRequestController@submitQuote']);
 Route::post('quoteuploads', 'QuoteFileUploadsController@receiveFile');

@@ -616,3 +616,22 @@ footer {
 
 #quote-form .file-select-area {
   padding: 2em; }
+
+.thanks-banner {
+  background: #F5a626;
+  margin: 4em 0;
+  width: 100%;
+  min-height: 250px;
+  padding: 100px 0 0; }
+  .thanks-banner p {
+    font-family: 'Roboto', Calibri, Helvetica, Ariel, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 300; }
+
+.bulb-image {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 3em; }

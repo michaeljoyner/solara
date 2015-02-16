@@ -59,7 +59,7 @@ class QuoteRequestController extends Controller {
 
 		$this->dispatcher->dispatch($quoteRequest->releaseEvents());
 
-		return response('Thanks '.$quoteRequest->contact_person);
+		return redirect('thanks')->with('thanks_note', 'Thanks '.$quoteRequest->contact_person.', we will be in touch soon!');
 	}
 
 }

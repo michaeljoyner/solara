@@ -1,0 +1,22 @@
+.thanks-banner {
+  background: #F5a626;
+  margin: 4em 0;
+  width: 100%;
+  min-height: 250px;
+  padding: 100px 0 0;
+
+  p {
+    font-family: $content_font;
+    color: $white;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 300;
+  }
+}
+
+.bulb-image {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 3em;
+}
