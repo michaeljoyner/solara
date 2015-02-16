@@ -39,13 +39,13 @@ html, body {
   background: transparent;
   text-align: center;
   transition: .7s;
-  -webkit-transform: translate3d(-500px, -1000px, 0);
-          transform: translate3d(-500px, -1000px, 0);
+  -webkit-transform: translate3d(-500px, -100%, 0);
+          transform: translate3d(-500px, -100%, 0);
   border-radius: 100%;
   opacity: 0; }
 
 .show-nav .toggled-nav {
-  background: rgba(244, 12, 77, 0.95);
+  background: rgba(244, 62, 7, 0.95);
   z-index: 10;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -79,6 +79,7 @@ html, body {
   color: inherit;
   text-decoration: none;
   font-family: 'Roboto', Calibri, Helvetica, Ariel, sans-serif;
+  font-weight: 300;
   -webkit-transform: scale(.3);
       -ms-transform: scale(.3);
           transform: scale(.3);
@@ -98,7 +99,8 @@ html, body {
   position: absolute;
   top: 70%;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 1em; }
 
 .side-nav {
   width: 20%;
@@ -622,7 +624,7 @@ footer {
   margin: 4em 0;
   width: 100%;
   min-height: 250px;
-  padding: 100px 0 0; }
+  padding: 100px 1em 0; }
   .thanks-banner p {
     font-family: 'Roboto', Calibri, Helvetica, Ariel, sans-serif;
     color: #FFFFFF;
@@ -632,6 +634,6 @@ footer {
 
 .bulb-image {
   display: block;
-  width: 100%;
+  width: 90%;
   max-width: 380px;
   margin: 0 auto 3em; }

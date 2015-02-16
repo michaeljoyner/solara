@@ -20,10 +20,8 @@
         <span class="fum_close-btn"><span class="glyphicon glyphicon-remove"></span></span>
     </script>
 @include('partials.topheader')
-<header class="main-header">
-    <img src="images/drawing.png" alt="logo" class="logo-small">
-    <h1 class="products-title">Get a Quote</h1>
-</header>
+@include('partials.pagetitleheader', ['pagetitle' => 'Get a Quote'])
+
 {!! Form::open(['route' => 'quoterequest', 'id' => 'quote-form']) !!}
 <div class="row">
     <div class="col-sm-5">
@@ -83,14 +81,8 @@
 
 @section('bodyscripts')
 <script src="{{ asset('js/uploadi.min.js') }}"></script>
-<script>
-    function showTitle() {
-        var title = document.querySelector(".products-title");
-        title.style.transform = "rotateX(0deg)";
-        title.style.webkitTransform = "rotateX(0deg)";
-    }
-    window.addEventListener('load', showTitle, false);
-</script>
+@include('partials.showtitlescript')
+
 <script>
 var uploadManager = {
     form: document.getElementById('quote-form'),

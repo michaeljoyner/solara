@@ -2,10 +2,8 @@
 
 @section('content')
 @include('partials.topheader')
-<header class="main-header">
-    <img src="images/drawing.png" alt="logo" class="logo-small">
-    <h1 class="products-title">Contact Us</h1>
-</header>
+@include('partials.pagetitleheader', ['pagetitle' => 'Contact Us'])
+
 <div class="contact-details">
 <h2>Feel free to contact us using any of the details below. We would love to hear from you.</h2>
 <img src="{{ asset('images/wires.svg') }}" alt="wires" class="wires-img"/>
@@ -19,12 +17,5 @@
 @stop
 
 @section('bodyscripts')
-<script>
-    function showTitle() {
-        var title = document.querySelector(".products-title");
-        title.style.transform = "rotateX(0deg)";
-        title.style.webkitTransform = "rotateX(0deg)";
-    }
-    window.addEventListener('load', showTitle, false);
-</script>
+@include('partials.showtitlescript')
 @stop
